@@ -2,25 +2,78 @@
   "name": "spa-skeleton",
   "version": "1.0.0",
   "description": "Boilerplate for creating a single-page application (SPA). It is built with Vite, featuring Handlebars and SCSS ",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "author": "Martin Sazzaroli",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/masaroli/spa-skeleton.git"
   },
-  "keywords": [
-    "SPA",
-    "Vite",
-    "Handlebars",
-    "Typescript",
-    "SCSS"
-  ],
-  "author": "Martin Sazzaroli",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/masaroli/spa-skeleton/issues"
+  "scripts": {
+    "checkLicense": "license-checker --production",
+    "postInstall": "typesync",
+    "stylelint": "stylelint 'src/**/*.{css,scss}'",
+    "stylelint:fix": "stylelint 'src/**/*.{css,scss}' --fix",
+    "htmlValidate": "html-validate 'dist/**/*.html'",
+    "format": "prettier --write --plugin-search-dir=. 'src/**/*.{js,ts}'",
+    "eslint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "eslint:fix": "eslint --fix 'src/**/*.{js,ts}'",
+    "checkTypes": "tsc --noEmit",
+    "lint": "npm-run-all -p eslint checkTypes stylelint htmlValidate",
+    "lint:fix": "npm-run-all eslint:fix checkTypes format stylelint:fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "serve": "npm-run-all build preview"
   },
-  "homepage": "https://github.com/masaroli/spa-skeleton#readme"
+  "devDependencies": {
+    "@types/eslint": "^8.21.1",
+    "@types/jest": "^29.4.0",
+    "@types/license-checker": "^25.0.3",
+    "@types/micromodal": "^0.3.3",
+    "@types/node": "^18.15.0",
+    "@types/prettier": "^2.7.2",
+    "@types/smooth-scroll": "^16.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "autoprefixer": "^10.4.14",
+    "css-declaration-sorter": "^6.3.1",
+    "eslint": "^8.36.0",
+    "html-validate": "^7.13.3",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "license-checker": "^25.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.21",
+    "postcss-combine-media-query": "^1.0.1",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-plugin": "^1.0.0",
+    "prettier": "^2.8.4",
+    "sass": "^1.59.2",
+    "stylelint": "^15.2.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-standard": "^30.0.1",
+    "stylelint-config-standard-scss": "^7.0.1",
+    "stylelint-order": "^6.0.3",
+    "stylelint-prettier": "^3.0.0",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5",
+    "typesync": "^0.10.0",
+    "vite": "^4.1.5",
+    "vite-plugin-handlebars": "^1.6.0",
+    "vite-plugin-imagemin": "^0.6.1",
+    "vite-plugin-pwa": "^0.14.4",
+    "vite-plugin-sass-glob-import": "^2.0.0",
+    "vite-plugin-svg-icons": "^2.0.1"
+  },
+  "dependencies": {
+    "install": "^0.13.0",
+    "micromodal": "^0.4.10",
+    "smooth-scroll": "^16.1.3",
+    "style-loader": "^3.3.1",
+    "swiper": "^9.1.0"
+  }
 }
