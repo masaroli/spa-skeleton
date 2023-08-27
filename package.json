@@ -1,0 +1,26 @@
+{
+  "name": "spa-skeleton",
+  "version": "1.0.0",
+  "description": "Boilerplate for creating a single-page application (SPA). It is built with Vite, featuring Handlebars and SCSS ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masaroli/spa-skeleton.git"
+  },
+  "keywords": [
+    "SPA",
+    "Vite",
+    "Handlebars",
+    "Typescript",
+    "SCSS"
+  ],
+  "author": "Martin Sazzaroli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/masaroli/spa-skeleton/issues"
+  },
+  "homepage": "https://github.com/masaroli/spa-skeleton#readme"
+}
