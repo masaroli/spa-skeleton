@@ -14,7 +14,7 @@ Before you begin, ensure you have the following:
 1. Clone this repository to your local machine:
 
    ```
-   git clone https://github.com/your-username/spa-skeleton.git
+   git clone https://github.com/masaroli/spa-skeleton
    cd spa-skeleton
    ```
 
