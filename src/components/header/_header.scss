@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@use '@styles/utils/mixins/media-query' as *;
+@use '@styles/variables' as *;
+
+/* ========================================
+  Hero Section
+======================================== */
+#page-header {
+  height: $height-header-mobile;
+  color: $color-text-inverted;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  @include media-query(md) {
+    height: $height-header-desktop;
+  }
+}

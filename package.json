@@ -1,7 +1,7 @@
 {
   "name": "spa-skeleton",
   "version": "1.0.0",
-  "description": "Boilerplate for creating a single-page application (SPA). It is built with Vite, featuring Handlebars and SCSS ",
+  "description": "Boilerplate for creating a single-page application (SPA). It is built with Vite, featuring Handlebars and SCSS",
   "author": "Martin Sazzaroli",
   "repository": {
     "type": "git",
@@ -9,7 +9,6 @@
   },
   "license": "MIT",
   "scripts": {
-    "checkLicense": "license-checker --production",
     "postInstall": "typesync",
     "stylelint": "stylelint 'src/**/*.{css,scss}'",
     "stylelint:fix": "stylelint 'src/**/*.{css,scss}' --fix",
@@ -22,7 +21,7 @@
     "lint:fix": "npm-run-all eslint:fix checkTypes format stylelint:fix",
     "test": "jest",
     "test:watch": "jest --watch",
-    "start": "vite",
+    "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "serve": "npm-run-all build preview"

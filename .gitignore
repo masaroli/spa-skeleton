@@ -1,0 +1,24 @@
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+*.local
+
+# Project build
+dist
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+package-lock.json
+
+# dotenv environment variables file
+.env

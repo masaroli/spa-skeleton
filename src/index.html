@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# {{ ogType }}: http://ogp.me/ns/{{ ogType }}#">
+    {{> head/_head }}
+  </head>
+
+  <body>
+    <!--Header-->
+    {{> header/_header }}
+    <!--Main-Content-->
+    <main>{{> hero/_hero}}</main>
+    <!--Footer-->
+    {{> footer/_footer }}
+    <!--Modal-->
+    {{> modal-sample/_modalSample}}
+    <script type="module" src="/ts/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@use '@styles/utils/mixins/media-query' as *;
+@use '@styles/variables/' as *;
+
+/* ========================================
+  Hero Section
+======================================== */
+#hero-section {
+  background: $color-brand-primary;
+  color: $color-text-inverted;
+  min-height: 100vh;
+  padding-top: $height-header-mobile;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include media-query(md) {
+    background: $color-brand-tertiary;
+    padding-top: $height-header-desktop;
+  }
+}
