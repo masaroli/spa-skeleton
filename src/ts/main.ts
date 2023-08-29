@@ -9,16 +9,6 @@ import '/scss/site.scss';
 import './libs/smoothScroll';
 import './libs/modal';
 
-// Import Namespace
-import sample from './namespace/sample';
-import _modal from './libs/modal';
-
-// Call Namespace
-const checkSamplePage = document.getElementById('sample');
-if (checkSamplePage) {
-  sample();
-}
-
 // Register SW
 const updateSW = registerSW({
   onNeedRefresh() {

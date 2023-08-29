@@ -22,7 +22,6 @@ Before you begin, ensure you have the following:
 
    ```
     npm install
-
    ```
 
 3. Start the development server:
